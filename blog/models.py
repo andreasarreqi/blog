@@ -9,7 +9,7 @@ class Musician(models.Model):
     """
     Defines the post model attribues of the database
     """
-    name = models.CharField(max_length=200, unique=True)
+    artist = models.CharField(max_length=200, unique=True)
     genre = models.CharField(max_length=50)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User,
@@ -24,3 +24,32 @@ class Musician(models.Model):
     likes = models.ManyToManyField(User,
                                    related_name='blogpost_like',
                                    blank=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return self.name
+
+    def number_of_likes(self):
+        return self.likes.count()
+
+
+class Comment(models.Model):
+    """
+    Defines the comment model attribues of the database
+    """
+    post = models.ForeignKey(Musician,
+                             on_delete=models.CASCADE,
+                             related_name="comments")
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"
