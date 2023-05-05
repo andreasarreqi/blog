@@ -3,8 +3,8 @@ from django.views import generic
 from .models import Musician
 
 
-class PostList(generic.ListView):
+class MusicianList(generic.ListView):
     model = Musician
     queryset = Musician.objects.filter(status=1).order_by("-created_on")
-    temnplate_name = 'index.html'
-    paginate_by = 8
+    template_name = "index.html"
+    paginate_by = 6
