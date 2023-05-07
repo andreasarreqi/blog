@@ -5,6 +5,9 @@
     font-family: Roboto Condensed;
     font-weight: 500;
 }
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 
 /* --------------------------- Navbar background */
 .navbar {
@@ -41,6 +44,9 @@
     border: none;
     background-color: transparent;
 }
+.card {
+    position: relative;
+}
 
 .image-container {
     position: relative;
@@ -73,4 +79,9 @@
 .post-title {
     margin-top: 20%;
     margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    text-transform: uppercase;
 }
