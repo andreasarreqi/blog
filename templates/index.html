@@ -24,11 +24,12 @@ div class="container-fluid">
                             </div>
                             <a href="{% url 'post_detail' musician.slug  %}"" class="post-link">
                                 <h2 class="card-title">{{ musician.artist }}</h2>
+                                <p class="card-text">{{ musician.genre }}</p>
                                 <p class="card-text">{{ musician.excerpt }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ musician.created_on}} {{musician.updated_on}} <i class="far fa-heart"></i>
-                                {{ musician.number_of_likes }}</p>
+                            <p class="card-text text-muted h6">{{ musician.created_on}} <i class="far fa-heart"></i>
+                                {{ musician.number_of_likes }} </p>
                         </div>
                     </div>
                 </div>
