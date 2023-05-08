@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Musician
+from .forms import CommentForm
 
 
 class MusicianList(generic.ListView):
@@ -32,6 +33,7 @@ class PostDetail(View):
             {
                 "musician": musician,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm(),
             },
         )
