@@ -8,7 +8,7 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <h1 class="post-title">{{ musician.artist }}</h1>
-                <p class="post-subtitle">{{ musician.author }} | {{ musician.created_on }}</p>
+                <p class="post-subtitle">{{ musician.author }} | Updated On: {{ musician.updated_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in musician.artist_image.url %}
@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <p class="card-text ">
+                <p class="card-text">
                     {{ musician.content | safe }}
                 </p>
                 <div class="row">

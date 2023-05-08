@@ -33,7 +33,39 @@ class PostDetail(View):
             {
                 "musician": musician,
                 "comments": comments,
+                "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm(),
+                "comment_form": CommentForm()
+            },
+        )
+
+    def post(self, request, slug, *args, **kwargs):
+
+        queryset = Musician.objects.filter(status=1)
+        musician = get_object_or_404(queryset, slug=slug)
+        comments = musician.comments.filter(
+                                    approved=True).order_by("-created_on")
+        liked = False
+        if musician.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.musician = musician
+        else:
+            comment_form = CommentForm()
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "musician": musician,
+                "comments": comments,
+                "commented": True,
+                "liked": liked,
+                "comment_form": CommentForm()
             },
         )

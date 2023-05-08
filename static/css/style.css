@@ -41,17 +41,16 @@ body {
 .card-body {
     height: 30%;
     width: 50%;
-    margin-top: 15%;
+    width: 80%;
 }
 
 .card {
     border: none;
     background-color: transparent;
+    position: relative;
+    margin-top: 20%;
 }
 
-.card {
-    position: relative;
-}
 
 .image-container {
     position: relative;
@@ -134,9 +133,4 @@ body {
 .btn-signup {
     background-color: blue;
     color: white;
-}
-
-/*-------------------------------- Comments*/
-.card-body {
-   width: 100%;
 }
