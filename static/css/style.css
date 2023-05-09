@@ -36,12 +36,6 @@ body {
 }
 
 /*--------------------------- Card Styling */
-.card-body {
-    height: 30%;
-    width: 50%;
-    width: 80%;
-}
-
 .card {
     border: none;
     background-color: transparent;

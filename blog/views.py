@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from .models import Musician
+from django.http import HttpResponseRedirect
+from .models import Musician, Comment
 from .forms import CommentForm
 
 
@@ -69,3 +70,17 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+
+class PostLike(View):
+    """
+    PostLike view  renders blog page likes
+    """
+    def post(self, request, slug, *args, **kwargs):
+        musician = get_object_or_404(Musician, slug=slug)
+        if musician.likes.filter(id=request.user.id).exists():
+            musician.likes.remove(request.user)
+        else:
+            musician.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
