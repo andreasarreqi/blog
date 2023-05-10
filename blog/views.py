@@ -30,18 +30,17 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            'post_detail.html',
             {
-                "musician": musician,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },
+                'musician': musician,
+                'comments': comments,
+                'commented': False,
+                'liked': liked,
+                'comment_form': CommentForm(),
+            }
         )
 
     def post(self, request, slug, *args, **kwargs):
-
         queryset = Musician.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -63,11 +62,11 @@ class PostDetail(View):
             request,
             "post_detail.html",
             {
-                "post": post,
+                "musician": post,
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-                "liked": liked
+                "liked": liked,
             },
         )
 
