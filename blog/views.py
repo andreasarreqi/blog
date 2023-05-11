@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic.edit import UpdateView
 from django.http import HttpResponseRedirect
 from .models import Musician, Comment
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -119,12 +120,19 @@ class AddPost(View):
                 form.save()
                 return redirect('home')
             else:
-                return render(request, 'add_post.html', context)
+                return render(request, 'add_post.html',
+                {
+                    'form': form
+                    }
+                )
         else:
             form = PostForm()
 
-        context = {'form': form}
-        return render(request, 'index.html', context)
+        return render(request, 'index.html',
+        {
+            'form': form
+        }
+        )
 
 
 class SharedPostsByUsers(LoginRequiredMixin, generic.ListView):
@@ -140,3 +148,22 @@ class SharedPostsByUsers(LoginRequiredMixin, generic.ListView):
 
     def get_queryset(self, *args, **kwargs):
         return Musician.objects.filter(author=self.request.user, status=1).order_by('-created_on')  # noqa: E501
+
+
+class UpdatePost(UpdateView):
+    """
+    update a post when user logged in
+    and shared a post, and they are the
+    author of that post
+    """
+    model = Musician
+    template_name = 'update_post.html'
+    form_class = PostForm
+    success_url = '/'
+
+    def form_valid(self, form):
+        """
+        if form is valid below message will display
+        while return to the home page
+        """
+        return super().form_valid(form)
