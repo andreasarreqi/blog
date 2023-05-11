@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+{% if user.is_authenticated %}
+
+<!-- to view all posts shared by logged in user page -->
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h3 class="text-center text-black">My Posts</h3>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                <!-- if the user have added post, they will show here -->
+                {% if musician_list|length > 0 %}
+                <!-- loopping through the posts have been shared by the logged in user -->
+                {% for musician in musician_list %}
+                <div class="col-md-4">
+                    <div class="card card shadow-lg mb-5 bg-light bg-gradient rounded">
+                        <div class="card-body">
+                            <div class="image-container">
+                                {% if "placeholder" in musician.artist_image.url %}
+                                <img src=https://res.cloudinary.com/duyhhodva/image/upload/v1683303092/9d7a0084-0acf-460a-ad16-3e721a74268e659a0540510965ede1_68537198_10103415571025198_6256496714262249472_o_yghpne.jpg"
+                                    class="card-img-top post-img img-fluid" alt="placeholder
+                                image">
+                                {% else %}
+                                <img src=" {{ musician.artist_image.url }} " class="card-img-top post-img img-fluid"
+                                    alt="An uploaded image from the user">
+                                {% endif %}
+                            </div>
+                            <p class="author">Author: {{ musician.author }}</p>
+                            {% if user.is_authenticated %}
+                            {% if user.id == musician.author.id %}
+                            <div class="container d-flex flex-row-reverse">
+                                <!-- update post button -->
+                                <a href="{% url 'update_post' musician.slug %}" role="button"
+                                    class="btn btn-success bg-success bg-gradient edit-btn">
+                                    Update
+                                </a>
+
+                                <!-- delete post button -->
+                                <a href="{% url 'delete_post' musician.slug %}" role="button"
+                                    class="btn btn-danger bg-danger bg-gradient delete-btn me-2">
+                                    Delete
+                                </a>
+                            </div>
+                            {% endif %}
+                            {% endif %}
+                            <a href="{% url 'post_detail' musician.slug %}" class="post-link">
+                                <h3 class="card-title">{{ musician.title }}</h3>
+                                <p class="card-text">{{ musician.excerpt }}</p>
+                            </a>
+                            <hr />
+                            <div class="card-info d-flex justify-content-between">
+                                <p class="card-text text-muted h6">{{ musician.created_on }}</p>
+                                <p class="like-comment"><i class="far fa-heart"></i> {{ musician.number_of_likes}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+                <a href="{% url 'add_post' %}" role="button" type="submit" class="btn btn-lg btn-outline-info">
+                    Add Post
+                </a>
+            </div>
+            <!-- if the user have NOT shared any post, the share button below will display -->
+            {% else %}
+            <div class="container text-center mt-4">
+                <div class="text-black">
+                    <strong>
+                        <p>
+                            It looks like that you haven't share any posts yet. Click on the button below
+                        </p>
+                    </strong>
+                    <span>Start sharing.</span>
+                </div>
+                <div class="mt-4">
+                    <a href="{% url 'add_post' %}" role="button" type="submit" class="btn btn-signup btn-lg"">
+                        Share Post
+                    </a>
+                </div>
+            </div>
+
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- pagination code copied from I Think Therefore I Blog project walkthrough -->
+    {% if is_paginated %}
+    <nav aria-label=" Page navigation">
+                        <ul class="pagination justify-content-center">
+                            {% if page_obj.has_previous %}
+                            <li class="page-item">
+                                <a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; Previous
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if page_obj.has_next %}
+                            <li class="page-item">
+                                <a href="?page={{ page_obj.next_page_number }}" class="page-link">Next &raquo;</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                        </nav>
+                        {% endif %}
+
+                </div>
+                {% else %}
+                Warning: Restricted access!
+
+                {% endif %}
+
+                {% endblock %}

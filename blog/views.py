@@ -2,7 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Musician, Comment
-from .forms import CommentForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import CommentForm, PostForm
 
 
 class MusicianList(generic.ListView):
@@ -83,3 +84,59 @@ class PostLike(View):
             musician.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class AddPost(View):
+    """allow user to add a post"""
+
+    def get(self, request):
+        """to get add_post.html
+        using PostForm
+        """
+        context = {'form': PostForm()}
+        return render(request, 'add_post.html', context)
+
+    def post(self, request):
+        """
+        to allow user to post new articles to
+        the blog for others to see and interact with.
+        If the form is not valid it will display an error
+        message and return to the add post form.
+
+        If is valid form, it will save and display a success
+        message to the user, as well as redirect to the
+        home page
+        """
+
+        if request.method == 'POST':
+            form = PostForm(request.POST, initial={
+                'author': request.user.username
+                })
+            if form.is_valid():
+                form.instance.email = request.user.email
+                form.instance.name = request.user.username
+                form.instance.author = self.request.user
+                form.save()
+                return redirect('home')
+            else:
+                return render(request, 'add_post.html', context)
+        else:
+            form = PostForm()
+
+        context = {'form': form}
+        return render(request, 'index.html', context)
+
+
+class SharedPostsByUsers(LoginRequiredMixin, generic.ListView):
+    """
+    display all the posts added by currently
+    logged in user, 6 posts per page
+    """
+    model = Musician
+    author = Musician.author
+    login_url = 'account_login'
+    template_name = 'shared_posts.html'
+    paginate_by = 6
+
+    def get_queryset(self, *args, **kwargs):
+        return Musician.objects.filter(author=self.request.user, status=1).order_by('-created_on')  # noqa: E501
