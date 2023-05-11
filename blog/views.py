@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic.edit import UpdateView
+from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Musician, Comment
 from django.contrib.auth.mixins import LoginRequiredMixin
