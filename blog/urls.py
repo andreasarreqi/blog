@@ -7,4 +7,5 @@ urlpatterns = [
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path('add_post', views.AddPost.as_view(), name='add_post'),
     path('shared_posts', views.SharedPostsByUsers.as_view(), name='shared_posts'),  # noqa: E501
+    path('<slug:slug>/update', views.UpdatePost.as_view(), name='update_post'),  # noqa: E501
 ]
