@@ -167,3 +167,14 @@ class UpdatePost(UpdateView):
         while return to the home page
         """
         return super().form_valid(form)
+
+
+class DeletePost(DeleteView):
+    """
+    delete a post when user logged in
+    and shared a post, and they are the
+    author of that post
+    """
+    model = Musician
+    template_name = 'delete_post.html'
+    success_url = '/'
