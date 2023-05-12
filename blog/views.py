@@ -101,12 +101,6 @@ class AddPost(View):
         """
         to allow user to post new articles to
         the blog for others to see and interact with.
-        If the form is not valid it will display an error
-        message and return to the add post form.
-
-        If is valid form, it will save and display a success
-        message to the user, as well as redirect to the
-        home page
         """
 
         if request.method == 'POST':
@@ -163,8 +157,7 @@ class UpdatePost(UpdateView):
 
     def form_valid(self, form):
         """
-        if form is valid below message will display
-        while return to the home page
+        if form is valid return to the home page
         """
         return super().form_valid(form)
 

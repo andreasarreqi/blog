@@ -32,6 +32,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 ALLOWED_HOSTS = [
     'rapblog.herokuapp.com',
     '8000-andreasarreqi-blog-vma87ear8u.us2.codeanyapp.com'

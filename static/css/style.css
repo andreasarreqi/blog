@@ -24,11 +24,13 @@ body {
 
 .footer {
     word-spacing: 6px;
+    background-color: #08090a;
+    bottom: 0;
 }
 
 /* --------------------------- Fontawesome icons */
 .dark-bg i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     letter-spacing: 1.5rem;
 }
 
@@ -47,7 +49,7 @@ body {
 
 .card-body {
     margin: 5%;
-    padding: 5%;
+    padding: 10%;
 }
 
 .image-container {
@@ -93,7 +95,7 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 40vh;
     width: 100%;
 }
 
