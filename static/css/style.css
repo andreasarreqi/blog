@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: Lato, sans-serif;
 }
 
@@ -21,15 +22,15 @@ body {
 }
 
 .footer {
-    word-spacing: 3px;
+    word-spacing: 1.5px;
     background-color: #08090a;
     bottom: 0;
 }
 
 /* --------------------------- Fontawesome icons */
 .dark-bg i {
-    font-size: 1.2rem;
-    letter-spacing: 1.2rem;
+    font-size: 1rem;
+    word-spacing: 0.5rem;
 }
 
 .dark-bg i:hover {
@@ -151,6 +152,10 @@ body {
 
 /*---------------------------------- Media Queries*/
 @media screen and (max-width: 414px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .form {
         text-align: center;
         margin-top: 50%;
