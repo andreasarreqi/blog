@@ -29,7 +29,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in musician.artist_image.url %}
-                                <img src=https://res.cloudinary.com/duyhhodva/image/upload/v1683303092/9d7a0084-0acf-460a-ad16-3e721a74268e659a0540510965ede1_68537198_10103415571025198_6256496714262249472_o_yghpne.jpg"
+                                <img src="https://res.cloudinary.com/duyhhodva/image/upload/v1683303092/9d7a0084-0acf-460a-ad16-3e721a74268e659a0540510965ede1_68537198_10103415571025198_6256496714262249472_o_yghpne.jpg"
                                     class="card-img-top post-img img-fluid" alt="placeholder
                                 image">
                                 {% else %}
@@ -59,7 +59,7 @@
                                 <h3 class="card-title">{{ musician.artist }}</h3>
                                 <p class="card-text">{{ musician.excerpt }}</p>
                             </a>
-                            <hr />
+                            <hr>
                             <div class="card-info d-flex justify-content-between">
                                 <p class="card-text text-muted h6">{{ musician.created_on }}</p>
                                 <p class="like-comment"><i class="far fa-heart"></i> {{ musician.number_of_likes}}</p>
@@ -73,7 +73,7 @@
                 {% endif %}
                 {% endfor %}
             </div>
-            <a href="{% url 'add_post' %}" role="button" type="submit" class="btn btn-signup btn-lg ap">
+            <a href="{% url 'add_post' %}" class="btn btn-signup btn-lg ap">
                 Add Post
             </a>
             <!-- if the user have NOT shared any post, the share button below will display -->

@@ -12,9 +12,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in musician.artist_image.url %}
                 <img src="https://res.cloudinary.com/duyhhodva/image/upload/v1683303092/9d7a0084-0acf-460a-ad16-3e721a74268e659a0540510965ede1_68537198_10103415571025198_6256496714262249472_o_yghpne.jpg"
-                    width="60%">
+                    width="600" alt="placeholder image">
                 {% else %}
-                <img src=" {{ musician.artist_image.url }}" width="100%">
+                <img src=" {{ musician.artist_image.url }}" width="100%" alt="artist image">
                 {% endif %}
             </div>
         </div>
@@ -95,7 +95,7 @@
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>
-                <p>Posting as: {{ user.username }}</p>
+                <p> Posting as: {{ user.username }} </p>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}

@@ -14,9 +14,10 @@ div class="container-fluid">
                         <div class="image-container">
                             {% if "placeholder" in musician.artist_image.url %}
                             <img class="card-img-top"
-                                src="https://res.cloudinary.com/duyhhodva/image/upload/v1683303092/9d7a0084-0acf-460a-ad16-3e721a74268e659a0540510965ede1_68537198_10103415571025198_6256496714262249472_o_yghpne.jpg">
+                                src="https://res.cloudinary.com/duyhhodva/image/upload/v1683303092/9d7a0084-0acf-460a-ad16-3e721a74268e659a0540510965ede1_68537198_10103415571025198_6256496714262249472_o_yghpne.jpg"
+                                alt="placeholder image">
                             {% else %}
-                            <img class="card-img-top" src=" {{ musician.artist_image.url }}">
+                            <img class="card-img-top" src=" {{ musician.artist_image.url }}" alt="artist image">
                             {% endif %}
                             <div class="image-flash">
                                 <p class="author">Author: {{ musician.author }}</p>
@@ -27,7 +28,7 @@ div class="container-fluid">
                             <p class="card-text">{{ musician.genre }}</p>
                             <p class="card-text">{{ musician.excerpt }}</p>
                         </a>
-                        <hr />
+                        <hr>
                         <p class="card-text text-muted h6">{{ musician.created_on}} <i class="far fa-heart"></i>
                             {{ musician.number_of_likes }} </p>
                     </div>

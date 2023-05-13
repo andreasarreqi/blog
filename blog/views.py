@@ -114,19 +114,11 @@ class AddPost(View):
                 form.save()
                 return redirect('home')
             else:
-                return render(request, 'add_post.html',
-                {
-                    'form': form
-                    }
-                )
+                return render(request, 'add_post.html', {'form': form})
         else:
             form = PostForm()
 
-        return render(request, 'index.html',
-        {
-            'form': form
-        }
-        )
+        return render(request, 'index.html', {'form': form})
 
 
 class SharedPostsByUsers(LoginRequiredMixin, generic.ListView):

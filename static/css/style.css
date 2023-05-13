@@ -6,8 +6,6 @@
 }
 
 body {
-    overflow-x: hidden;
-    /* Hide horizontal scrollbar */
     font-family: Lato, sans-serif;
 }
 
@@ -23,15 +21,15 @@ body {
 }
 
 .footer {
-    word-spacing: 6px;
+    word-spacing: 3px;
     background-color: #08090a;
     bottom: 0;
 }
 
 /* --------------------------- Fontawesome icons */
 .dark-bg i {
-    font-size: 1.5rem;
-    letter-spacing: 1.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1.2rem;
 }
 
 .dark-bg i:hover {
@@ -48,8 +46,7 @@ body {
 }
 
 .card-body {
-    margin: 5%;
-    padding: 10%;
+    word-spacing: 3px;
 }
 
 .image-container {
@@ -91,11 +88,11 @@ body {
 }
 
 .masthead {
-    margin-top: 10px;
+    margin-top: 20px;
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 40vh;
+    height: 30vh;
     width: 100%;
 }
 
@@ -150,4 +147,12 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+/*---------------------------------- Media Queries*/
+@media screen and (max-width: 414px) {
+    .form {
+        text-align: center;
+        margin-top: 50%;
+    }
 }
