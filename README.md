@@ -19,49 +19,49 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 - The icon on the Browser tab next to the website name.
 - There to help the user navigate easier through the browser tab.
 
-![Alt text](file:///workspaces/blog/static/media/favicon.ico)
+![Alt text](static/media/favicon.ico)
 
 </details>
 
 <details>
 <summary>Main Page</summary>
 
-![Alt text](file:///workspaces/blog/static/images/front%20page.PNG)
+![Alt text](static/images/front%20page.PNG)
 
 </details>
 
 <details>
 <summary>Navigation Bar</summary>
 
-![Alt text](file:///workspaces/blog/static/images/navbar.PNG)
+![Alt text](static/images/navbar.PNG)
 
 </details>
 
 <details>
 <summary>Footer</summary>
 
-![Alt text](file:///workspaces/blog/static/images/footer.PNG)
+![Alt text](static/images/footer.PNG)
 
 </details>
 
 <details>
 <summary>Login Form</summary>
 
-![Alt text](file:///workspaces/blog/static/images/login.PNG)
+![Alt text](static/images/login.PNG)
 
 </details>
 
 <details>
 <summary>Logout Form</summary>
 
-![Alt text](file:///workspaces/blog/static/images/logout.PNG)
+![Alt text](static/images/logout.PNG)
 
 </details>
 
 <details>
 <summary>Register Frrm</summary>
 
-![Alt text](file:///workspaces/blog/static/images/register.PNG)
+![Alt text](static/images/register.PNG)
 
 </details>
 
@@ -69,7 +69,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <summary>Add a post </summary>
 
 
-![Alt text](file:///workspaces/blog/static/images/add%20post.PNG)
+![Alt text](static/images/add%20post.PNG)
 
 
 
@@ -78,13 +78,13 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <details>
 <summary>My posts/Add Post</summary>
 
-![Alt text](file:///workspaces/blog/static/images/logged%20in%20navbar.PNG)
+![Alt text](static/images/logged%20in%20navbar.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/post.PNG)
+![Alt text](static/images/post.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/my%20posts.PNG)
+![Alt text](static/images/my%20posts.PNG)
 
 
 
@@ -93,10 +93,10 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <details>
 <summary> Update/Delete Form</summary>
 
-![Alt text](file:///workspaces/blog/static/images/delete%20post.PNG)
+![Alt text](static/images/delete%20post.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/update%20post.PNG)
+![Alt text](static/images/update%20post.PNG)
 </details>
 
 
@@ -104,10 +104,10 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <details>
 <summary> Like/Comment a Post</summary>
 
-![Alt text](file:///workspaces/blog/static/images/add%20comment.PNG)
+![Alt text](static/images/add%20comment.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/likes.PNG)
+![Alt text](static/images/likes.PNG)
 
 </details>
 
@@ -116,13 +116,13 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <summary> Responsiveness</summary>
 
 
-![Alt text](file:///workspaces/blog/static/images/responsive%20comment%20section%20%2B%20form.PNG)
+![Alt text](static/images/responsive%20comment%20section%20%2B%20form.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/responsive%20main%20page.PNG)
+![Alt text](static/images/responsive%20main%20page.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/responsive%20post.PNG)
+![Alt text](static/images/responsive%20post.PNG)
 
 
 </details>
@@ -247,7 +247,7 @@ The website works on different browsers: <strong>Chrome, Firefox and Edge.</stro
 
 All User Stories were successfully performed.
 Each respective User Story was seperated in a milestone making for a more organised project and helping keeping track of tasks and functions planned to be implemented.
-You can access them {here}(https://github.com/andreasarreqi/blog/milestones)
+You can access them [here](https://github.com/andreasarreqi/blog/milestones)
 </details>
 
 ## Validator Testing
@@ -256,30 +256,29 @@ You can access them {here}(https://github.com/andreasarreqi/blog/milestones)
 <summary>HTML</summary>
 HTML validator.
 
-![Alt text](file:///workspaces/blog/static/images/add%20post%20html%20validator.PNG)
+![Alt text](static/images/add%20post%20html%20validator.PNG)
 
-![Alt text](file:///workspaces/blog/static/images/update%20post%20html%20validator%20testing.PNG)
-
-
-![Alt text](file:///workspaces/blog/static/images/shared%20posts%20html%20validator.PNG)
+![Alt text](static/images/update%20post%20html%20validator%20testing.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/register%20html%20validator.PNG)
+![Alt text](static/images/shared%20posts%20html%20validator.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/login%20form%20html%20validator.PNG)
+![Alt text](static/images/register%20html%20validator.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/index%20html%20validator.PNG)
+![Alt text](static/images/login%20form%)
+
+![Alt text](static/images/index%20html%20validator.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/forms%20validator%20pep8.PNG)
+![Alt text](static/images/forms%20validator%20pep8.PNG)
 
 
-![Alt text](file:///workspaces/blog/static/images/delete%20post%20html%20validator.PNG)
+![Alt text](static/images/delete%20post%20html%20validator.PNG)
 
 
-![Alt text](file:///workspaces/blog/README.md)
+![Alt text](README.md)
 
 </details>
 
@@ -287,7 +286,7 @@ HTML validator.
 <summary>CSS</summary>
 CSS validator.
 
-![Alt text](file:///workspaces/blog/static/images/css%20validator.PNG)
+![Alt text](static/images/css%20validator.PNG)
 
 </details>
 
@@ -297,11 +296,11 @@ PEP8 validator.
 
 - Models
 - 
-![Alt text](file:///workspaces/blog/static/images/models%20pep8.PNG)
+![Alt text](static/images/models%20pep8.PNG)
 
 - Views
 - 
-![Alt text](file:///workspaces/blog/static/images/views%20pep8%20validator.PNG)
+![Alt text](static/images/views%20pep8%20validator.PNG)
 
 </details>
 
@@ -309,7 +308,7 @@ PEP8 validator.
 <summary>Lighthouse</summary>
 Lighthouse.
 
-![Alt text](file:///workspaces/blog/static/images/lighthouse.PNG)
+![Alt text](static/images/lighthouse.PNG)
 
 </details>
 
@@ -317,7 +316,7 @@ Lighthouse.
 <summary>WAVE</summary>
 WAVE validator.
 
-![Alt text](file:///workspaces/blog/static/images/wave.PNG)
+![Alt text]/static/images/wave.PNG)
 
 </details>
 
@@ -346,10 +345,13 @@ WAVE validator.
 
 - [Bootstrap](https://bootstrap.com)
 - Bootstrap was user to create a responsive desing on all platforms.
-- 
+
+
 - [Pexels](https://pexels.com)
-- Images were taken from Pexels
-- 
+- Images were taken from Pexels.
+
+
+
 ## Acknowledgements
 
 - I would like to thank my mentor Daisy for guiding me.
