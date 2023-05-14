@@ -306,7 +306,7 @@ Lighthouse.
 <summary>WAVE</summary>
 WAVE validator.
 
-![Alt text]/static/images/wave.PNG)
+![Alt text](static/images/wave.PNG)
 
 </details>
 
@@ -328,10 +328,12 @@ WAVE validator.
 
 ## Credits
 
-- [Code Institute]()
-- [Font Awesome.](https://fontawesome.com/)
+- [Code Institute](http://codeinstitute.net)
+- For the great lessons (I think therefore blog)
 
-![Alt text]()
+
+- [Font Awesome.](https://fontawesome.com/)
+- For the browser tab icon
 
 - [Bootstrap](https://bootstrap.com)
 - Bootstrap was user to create a responsive desing on all platforms.
