@@ -1,8 +1,5 @@
 # Rap Blog
-
-![Alt text])
-
-[Live Web Application Link](https://rapblog.herokuapp.com/)
+# [LWelcome to Rap blog](https://rapblog.herokuapp.com/)
 
 ## Introduction
 
