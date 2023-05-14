@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'blog',
+    'contact',
 ]
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
