@@ -33,3 +33,4 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Contact)
 class ContactPage(admin.ModelAdmin):
     list_display = ('name', 'email', 'message', 'sent')
+    search_fields = ['name', 'message']
