@@ -258,27 +258,17 @@ HTML validator.
 
 ![Alt text](static/images/add%20post%20html%20validator.PNG)
 
-![Alt text](static/images/update%20post%20html%20validator%20testing.PNG)
-
-
-![Alt text](static/images/shared%20posts%20html%20validator.PNG)
-
-
-![Alt text](static/images/register%20html%20validator.PNG)
-
-
-![Alt text](static/images/login%20form%)
+![Alt text](static/images/delete%20post%20html%20validator.PNG)
 
 ![Alt text](static/images/index%20html%20validator.PNG)
 
+![Alt text](static/images/login%20form%20html%20validator.PNG)
 
-![Alt text](static/images/forms%20validator%20pep8.PNG)
+![Alt text](static/images/register%20html%20validator.PNG)
 
+![Alt text](static/images/shared%20posts%20html%20validator.PNG)
 
-![Alt text](static/images/delete%20post%20html%20validator.PNG)
-
-
-![Alt text](README.md)
+![Alt text](static/images/update%20post%20html%20validator%20testing.PNG)
 
 </details>
 
@@ -295,13 +285,17 @@ CSS validator.
 PEP8 validator.
 
 - Models
-- 
+
 ![Alt text](static/images/models%20pep8.PNG)
 
 - Views
-- 
+
 ![Alt text](static/images/views%20pep8%20validator.PNG)
 
+
+- Forms
+
+![Alt Text](static/images/forms%20validator%20pep8.PNG)
 </details>
 
 <details>
