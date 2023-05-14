@@ -1,5 +1,4 @@
-# Rap Blog
-# [LWelcome to Rap blog](https://rapblog.herokuapp.com/)
+# [Welcome to Rap blog](https://rapblog.herokuapp.com/)
 
 ## Introduction
 
