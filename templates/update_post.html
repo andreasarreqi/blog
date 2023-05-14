@@ -11,13 +11,13 @@
 
 <!-- update post page -->
 <div class="container add-post offset-md-2">
-    <div class="row text-black">
+    <div class="row g-0 text-black">
         <div class="col-12 col-md-8 offset-md-2">
             <h1 class="text-center">Update Post</h1>
         </div>
     </div>
     <div>
-        <div class="row">
+        <div class="row g-0">
             <div class="col-12 col-md-8 offset-md-2">
                 <form method="POST" class="edit-post mt-2" action="{% url 'update_post' musician.slug %}">
                     {% csrf_token %}

@@ -7,7 +7,7 @@
 
 <!-- to view all posts shared by logged in user page -->
 <div class="container">
-    <div class="row">
+    <div class="row g-0">
         <div class="col-8 offset-2">
             <h3 class="text-center text-black">My Posts</h3>
             <hr>
@@ -16,10 +16,10 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <div class="row g-0">
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
-            <div class="row">
+            <div class="row g-0">
                 <!-- if the user have added post, they will show here -->
                 {% if musician_list|length > 0 %}
                 <!-- loopping through the posts have been shared by the logged in user -->
@@ -69,7 +69,7 @@
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row">
+            <div class="row g-0">
                 {% endif %}
                 {% endfor %}
             </div>

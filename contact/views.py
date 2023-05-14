@@ -17,5 +17,6 @@ class ContactUs(View):
         """
         Gets information through the contact form
         """
+
         context = {'form': ContactForm()}
         return render(request, 'contact.html', context)

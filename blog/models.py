@@ -35,8 +35,8 @@ class Musician(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.artist)
-        super().save(*args, **kwargs)
+            self.slug = slugify(self.title)
+        super(Musician, self).save(*args, **kwargs)
 
     def number_of_likes(self):
         return self.likes.count()
