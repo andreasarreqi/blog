@@ -6,6 +6,272 @@ Welcome to my very own [Rap Blog](https://rapblog.herokuapp.com/).
 I want to create a fun and responsive webiste about a genre of music i am a big fan of.
 A web page where fans of rap music can share their own posts and have ufn doing it 
 
+## AGILE Methodology
+
+### User Stories
+
+All User Stories were successfully performed.
+Each respective User Story was seperated in a milestone making for a more organised project and helping keeping track of tasks and functions planned to be implemented. Each milestone has a collection of issues that I thought would be helful towards finishing the project and i seperated them in either Fton-Ebd or Back-end. 
+You can access them [here](https://github.com/andreasarreqi/blog/milestones)
+
+
+All projects were assigned to epics, prioritized under the labels, Must have, should have, could have. They were assigned to piriority levels "Low Priority" "Medium Priority" "high Priority" . "Must have" stories were completed first, "should haves", "could haves" and finally "Wont have". It was done this way to ensure that all core requirements were completed first to give the project a complete feel, with the nice to have features being added should there be capacity.
+
+The Blog User Stories board was created using github projects and can be viewed to see more information on the project cards. All stories except the documentation tasks have a set of acceptance criteria in order to define the functionality that marks that story as complete.
+
+#### Epics
+The project had 5 main Epics (milestones):
+
+EPIC 1 - Base Setup
+
+The base setup epic is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible so it was the first epic to be delivered as all other features depend on the completion of the base setup.
+
+
+
+1. As a Developer, I need to set up the base structures of the project.
+
+<details>
+<summary> 1. Acceptance Criteria </summary
+
+- Django installed
+- Project created
+- Environment variables set up
+- Settings.py file modified to hide sensitive    information and use environment variables
+
+</details>
+
+2. As a developer, I need to create static resources so that images, css and javascript work on the website
+
+<details>
+<summary> 2. Acceptance Criteria </summary>
+
+- Create static folder and settings
+- Create sub folders for images, css , media , images
+
+</details>
+
+3. As a developer, I want to create the base.html page and structure so the other pages can use the layout
+
+<details>
+<summary>3. Acceptance Criteria </summary>
+
+- Create the templates
+- Create the navbar
+- Create the main content
+- Create the footer
+</details>
+
+
+4. As a developer, I need to create a responsive navbar so that users can navigate the website from any device
+<details>
+
+<summary> 4. Acceptance Criteria </summary>
+
+- Home - Shown for all users
+- Register - Shown to non logged in users only
+- Login - Shown to non logged in users only
+- Logout - Shown to logged in users only
+- My Posts - Shown to logged in users only
+- Contact Us - Shown to all users
+</details
+>
+
+
+5. As a developer, I need to create the footer with social media links and contact information
+
+<details>
+<summary> 5. Acceptance Criteria </summary>
+
+- Footer created
+- Social media link column
+- Social media links open in a new tab
+- Social media links navigate to the correct pages
+
+</details>
+
+
+EPIC 2 - Admin / Account
+The Admin / Account epic is for all stories needed for the Admin or account related soories. It is also related to the functions that can be achieved in the back end perspective of the website such ass database, admin panel etc.
+
+
+ADMIN / ACCOUNT - USER STORIES
+
+As a Developer, I need to create a super user to serve as the application's manager
+Acceptance Criteria
+
+<details>
+<summary> 1. Acceptance Criteria</summary>
+
+- Create an Administrator to manage the website
+
+</details>
+
+As a Admin, I want to create a post on the admin panel
+
+<details>
+
+<summary> 2. Acceptance Criteria</summary>
+
+
+- Musician model created with posting functionality
+- Musician Admin panel created
+- Admin can create a post and publish it
+- 
+</details>
+
+
+As a developer, I need to implement allauth so that users can sign up and have access to the websites features
+
+<details>
+<summary> 3. Acceptance Criteria </summary>
+
+- Allauth installed
+- Users are able to sign up and log in
+
+</details>
+
+
+As a developer, I need to style the UI of the forms to look more appealing.
+
+<details>
+<summary> 4. Acceptance Criteria </summary>
+
+- Style the forms
+- 
+</details>
+
+
+As a Admin, I want to create comment sectionf for users to comment on
+
+<details>
+<summary> 5. Acceptance Criteria </summary>
+
+- Create Comment Model
+- Create Comment view
+- Create Comment form
+- 
+</details>
+
+EPIC 3 - Blog
+The Blog epic is for all stories needed for the front end of the web page. Anything from the website that relates to the front end that the user actually sees and can interact with is located in this epic.
+
+
+BLOG - USER STORIES
+
+
+As a User, I like to view the posts on the web page
+
+<details>
+<summary> 1. Acceptance Criteria</summary>
+
+- User can view posts
+
+</details>
+
+
+
+As a User, I want the page to look consistent and neat with posts
+
+<details>
+<summary> 2. Acceptance Criteria</summary>
+
+- Main page is paginated by 6 per page
+
+</details>
+
+
+As a User, I want to be able to see the comments on the posts
+
+<details>
+<summary> 3. Acceptance Criteria</summary>
+
+- User can view the comments in every post 
+
+</details>
+
+
+
+As a User, I want to be able to like and unlike a post
+
+<details>
+<summary> 4. Acceptance Criteria</summary>
+
+- Post like vew was created
+- User can view likes and Like or Unlike a post
+
+
+</details>
+
+
+As a User, I want to create my own blog post
+
+<details>
+<summary> 5. Acceptance Criteria</summary>
+
+- Form was created
+- View was created
+- Form Template was created
+- User can add post
+
+</details>
+
+As a User, I want to delete a post that i have created
+
+<details>
+<summary> 6. Acceptance Criteria</summary>
+
+- User can delete a post they've created
+
+</details>
+
+
+As a User, I want to see the posts I've created
+
+<details>
+<summary> 7. Acceptance Criteria</summary>
+- User can view the posts the've created or create the first one
+
+</details>
+
+
+As a User, I want to be able to edit the posts I've created
+
+
+<details>
+<summary> 8. Acceptance Criteria</summary>
+
+- User can edit a post they;ve created
+
+</details>
+
+
+As a user, I would like to be able to contact the restaurant so that I can have any queries answered
+
+<details>
+<summary> 9. Acceptance Criteria</summary>
+
+- Users can contact the page admininstrator(s)
+</details>
+
+
+
+
+
+EPIC 4 - Deployment Epic
+
+This epic is for all stories related to deploying the app to heroku so that the site is live for staff and customer use.
+
+
+DEPLOYEMENT - USER STORIES
+
+
+EPIC 5 - Documentation
+
+This epic is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and using the application.
+
+DOCUMENTATION - USER STORIES
+
+
 
 ### Features
 
@@ -22,6 +288,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <details>
 <summary>Main Page</summary>
 
+
 ![Alt text](static/images/front%20page.PNG)
 
 </details>
@@ -29,7 +296,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 <details>
 <summary>Navigation Bar</summary>
 
-![Alt text](static/images/navbar.PNG)
+![Alt text](static/images/new%20nav.PNG)
 
 </details>
 
@@ -41,6 +308,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 </details>
 
 <details>
+
 <summary>Login Form</summary>
 
 ![Alt text](static/images/login.PNG)
@@ -61,6 +329,15 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 
 </details>
 
+
+<details>
+<summary>Contact Us</summary>
+
+![Alt text](static/images/contact%20form.PNG)
+
+</details>
+
+
 <details>
 <summary>Add a post </summary>
 
@@ -72,6 +349,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 </details>
 
 <details>
+
 <summary>My posts/Add Post</summary>
 
 ![Alt text](static/images/logged%20in%20navbar.PNG)
@@ -87,6 +365,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 </details>
 
 <details>
+
 <summary> Update/Delete Form</summary>
 
 ![Alt text](static/images/delete%20post.PNG)
@@ -98,6 +377,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 
 
 <details>
+
 <summary> Like/Comment a Post</summary>
 
 ![Alt text](static/images/add%20comment.PNG)
@@ -109,6 +389,7 @@ A web page where fans of rap music can share their own posts and have ufn doing 
 
 
 <details>
+
 <summary> Responsiveness</summary>
 
 
@@ -226,6 +507,15 @@ A web page where fans of rap music can share their own posts and have ufn doing 
    <td>PASS
    </td>
   </tr>
+  <td>Contact Form
+   </td>
+   <td>Fill the form and click submit
+   </td>
+   <td colspan="2" > The form sends data to the admin panel
+   </td>
+   <td>PASS
+   </td>
+  </tr>
 </table>
 <ol>
 
@@ -239,11 +529,7 @@ The website works on different browsers: <strong>Chrome, Firefox and Edge.</stro
 
 - Mobile Devices.
 
-## User Stories
 
-All User Stories were successfully performed.
-Each respective User Story was seperated in a milestone making for a more organised project and helping keeping track of tasks and functions planned to be implemented.
-You can access them [here](https://github.com/andreasarreqi/blog/milestones)
 </details>
 
 ## Validator Testing
@@ -251,6 +537,7 @@ You can access them [here](https://github.com/andreasarreqi/blog/milestones)
 <details>
 <summary>HTML</summary>
 HTML validator.
+All the pages that get displayed are validated.
 
 ![Alt text](static/images/add%20post%20html%20validator.PNG)
 
@@ -266,11 +553,13 @@ HTML validator.
 
 ![Alt text](static/images/update%20post%20html%20validator%20testing.PNG)
 
+![Alt text](static/images/contact%20form%20HTML%20validator.PNG)
 </details>
 
 <details>
 <summary>CSS</summary>
 CSS validator.
+All CSS code is validated.
 
 ![Alt text](static/images/css%20validator.PNG)
 
@@ -279,6 +568,7 @@ CSS validator.
 <details>
 <summary>Python Validator</summary>
 PEP8 validator.
+All Python code is validated.
 
 - Models
 
@@ -292,8 +582,19 @@ PEP8 validator.
 - Forms
 
 ![Alt Text](static/images/forms%20validator%20pep8.PNG)
-</details>
 
+
+- Contact 
+
+![Alt text](static/images/contact%20view%20PEP8.PNG)
+
+![Alt text](static/images/contact%20PEP8%20validator.PNG)
+
+![Alt text](static/images/contact%20admin%20PEP8.PNG)
+
+![Alt text](static/images/contact%20form%20PEP8.PNG)
+
+</details>
 <details>
 <summary>Lighthouse</summary>
 Lighthouse.
