@@ -10,9 +10,14 @@ body {
     font-family: Lato, sans-serif;
 }
 
+main {
+    margin-top: 70px;
+}
+
 /* --------------------------- Navbar background */
 .navbar {
     background-color: #08090a;
+    padding: 12px;
 }
 
 /* --------------------------- Footer */
@@ -124,7 +129,7 @@ body {
 
 /*--------------------------------- Form container*/
 .form {
-    margin-top: 12%;
+    margin-top: 6%;
 }
 
 .add-post {
