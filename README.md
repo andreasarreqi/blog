@@ -4,29 +4,27 @@
 
 Welcome to my very own [Rap Blog](https://rapblog.herokuapp.com/).
 I want to create a fun and responsive webiste about a genre of music i am a big fan of.
-A web page where fans of rap music can share their own posts and have ufn doing it 
+A web page where fans of rap music can share their own posts and have ufn doing it
 
 ## AGILE Methodology
 
 ### User Stories
 
 All User Stories were successfully performed.
-Each respective User Story was seperated in a milestone making for a more organised project and helping keeping track of tasks and functions planned to be implemented. Each milestone has a collection of issues that I thought would be helful towards finishing the project and i seperated them in either Fton-Ebd or Back-end. 
+Each respective User Story was seperated in a milestone making for a more organised project and helping keeping track of tasks and functions planned to be implemented. Each milestone has a collection of issues that I thought would be helful towards finishing the project and i seperated them in either Fton-Ebd or Back-end.
 You can access them [here](https://github.com/andreasarreqi/blog/milestones)
-
 
 All projects were assigned to epics, prioritized under the labels, Must have, should have, could have. They were assigned to piriority levels "Low Priority" "Medium Priority" "high Priority" . "Must have" stories were completed first, "should haves", "could haves" and finally "Wont have". It was done this way to ensure that all core requirements were completed first to give the project a complete feel, with the nice to have features being added should there be capacity.
 
 The Blog User Stories board was created using github projects and can be viewed to see more information on the project cards. All stories except the documentation tasks have a set of acceptance criteria in order to define the functionality that marks that story as complete.
 
 #### Epics
+
 The project had 5 main Epics (milestones):
 
 EPIC 1 - Base Setup
 
 The base setup epic is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible so it was the first epic to be delivered as all other features depend on the completion of the base setup.
-
-
 
 1. As a Developer, I need to set up the base structures of the project.
 
@@ -36,7 +34,7 @@ The base setup epic is for all stories needed for the base set up of the applica
 - Django installed
 - Project created
 - Environment variables set up
-- Settings.py file modified to hide sensitive    information and use environment variables
+- Settings.py file modified to hide sensitive information and use environment variables
 
 </details>
 
@@ -61,7 +59,6 @@ The base setup epic is for all stories needed for the base set up of the applica
 - Create the footer
 </details>
 
-
 4. As a developer, I need to create a responsive navbar so that users can navigate the website from any device
 <details>
 
@@ -76,7 +73,6 @@ The base setup epic is for all stories needed for the base set up of the applica
 </details
 >
 
-
 5. As a developer, I need to create the footer with social media links and contact information
 
 <details>
@@ -89,10 +85,18 @@ The base setup epic is for all stories needed for the base set up of the applica
 
 </details>
 
+6. As a developer, I need to create a error code handling page
 
+<details>
+<summary> Acceptance Criteria </summary>
+
+- Create 403.html
+- Create 404.html
+- Create 500.html
+
+</details>
 EPIC 2 - Admin / Account
 The Admin / Account epic is for all stories needed for the Admin or account related soories. It is also related to the functions that can be achieved in the back end perspective of the website such ass database, admin panel etc.
-
 
 ADMIN / ACCOUNT - USER STORIES
 
@@ -112,13 +116,10 @@ As a Admin, I want to create a post on the admin panel
 
 <summary> 2. Acceptance Criteria</summary>
 
-
 - Musician model created with posting functionality
 - Musician Admin panel created
 - Admin can create a post and publish it
-- 
-</details>
-
+- </details>
 
 As a developer, I need to implement allauth so that users can sign up and have access to the websites features
 
@@ -130,16 +131,13 @@ As a developer, I need to implement allauth so that users can sign up and have a
 
 </details>
 
-
 As a developer, I need to style the UI of the forms to look more appealing.
 
 <details>
 <summary> 4. Acceptance Criteria </summary>
 
 - Style the forms
-- 
-</details>
-
+- </details>
 
 As a Admin, I want to create comment sectionf for users to comment on
 
@@ -149,15 +147,12 @@ As a Admin, I want to create comment sectionf for users to comment on
 - Create Comment Model
 - Create Comment view
 - Create Comment form
-- 
-</details>
+- </details>
 
 EPIC 3 - Blog
 The Blog epic is for all stories needed for the front end of the web page. Anything from the website that relates to the front end that the user actually sees and can interact with is located in this epic.
 
-
 BLOG - USER STORIES
-
 
 As a User, I like to view the posts on the web page
 
@@ -168,8 +163,6 @@ As a User, I like to view the posts on the web page
 
 </details>
 
-
-
 As a User, I want the page to look consistent and neat with posts
 
 <details>
@@ -179,17 +172,14 @@ As a User, I want the page to look consistent and neat with posts
 
 </details>
 
-
 As a User, I want to be able to see the comments on the posts
 
 <details>
 <summary> 3. Acceptance Criteria</summary>
 
-- User can view the comments in every post 
+- User can view the comments in every post
 
 </details>
-
-
 
 As a User, I want to be able to like and unlike a post
 
@@ -199,9 +189,7 @@ As a User, I want to be able to like and unlike a post
 - Post like vew was created
 - User can view likes and Like or Unlike a post
 
-
 </details>
-
 
 As a User, I want to create my own blog post
 
@@ -224,7 +212,6 @@ As a User, I want to delete a post that i have created
 
 </details>
 
-
 As a User, I want to see the posts I've created
 
 <details>
@@ -233,9 +220,7 @@ As a User, I want to see the posts I've created
 
 </details>
 
-
 As a User, I want to be able to edit the posts I've created
-
 
 <details>
 <summary> 8. Acceptance Criteria</summary>
@@ -243,7 +228,6 @@ As a User, I want to be able to edit the posts I've created
 - User can edit a post they;ve created
 
 </details>
-
 
 As a user, I would like to be able to contact the restaurant so that I can have any queries answered
 
@@ -253,14 +237,9 @@ As a user, I would like to be able to contact the restaurant so that I can have 
 - Users can contact the page admininstrator(s)
 </details>
 
-
-
-
-
 EPIC 4 - Deployment Epic
 
 This epic is for all stories related to deploying the app to heroku so that the site is live for staff and customer use.
-
 
 DEPLOYEMENT - USER STORIES
 
@@ -271,14 +250,11 @@ As a developed, I need to deploy the project to heroku to be accessed by everyon
 
 - Website can be run not only localy
 
-- 
-</details>
-
+- </details>
 
 EPIC 5 - Documentation
 
 This epic is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and using the application.
-
 
 DOCUMENTATION - USER STORIES
 
@@ -289,9 +265,7 @@ As a developer, I want to create a README file to document every step I took cre
 
 - Anyone can see the procces of this page's development
 
-
 </details>
-
 
 ### Features
 
@@ -311,14 +285,13 @@ As a developer, I want to create a README file to document every step I took cre
 - Main page contains the nav bar
 - Blog Posts
 - Footer
-  
+
 ![Alt text](static/images/front%20page.PNG)
 
 </details>
 
 <details>
 <summary>Navigation Bar</summary
-
 
 The nav bar (Home , Login , Register , Cio)
 
@@ -363,16 +336,14 @@ The nav bar (Home , Login , Register , Cio)
 
 </details>
 
-
 <details>
 <summary>Contact Us</summary>
 
 - Contact form allows user to contatt the website's administrators.
- 
+
 ![Alt text](static/images/contact%20form.PNG)
 
 </details>
-
 
 <details>
 <summary>Add a post </summary>
@@ -380,8 +351,6 @@ The nav bar (Home , Login , Register , Cio)
 - Allows the user to add a post
 
 ![Alt text](static/images/add%20post.PNG)
-
-
 
 </details>
 
@@ -393,13 +362,9 @@ The nav bar (Home , Login , Register , Cio)
 
 ![Alt text](static/images/logged%20in%20navbar.PNG)
 
-
 ![Alt text](static/images/post.PNG)
 
-
 ![Alt text](static/images/my%20posts.PNG)
-
-
 
 </details>
 
@@ -411,11 +376,9 @@ The nav bar (Home , Login , Register , Cio)
 
 ![Alt text](static/images/delete%20post.PNG)
 
-
 ![Alt text](static/images/update%20post.PNG)
+
 </details>
-
-
 
 <details>
 
@@ -425,11 +388,9 @@ The nav bar (Home , Login , Register , Cio)
 
 ![Alt text](static/images/add%20comment.PNG)
 
-
 ![Alt text](static/images/likes.PNG)
 
 </details>
-
 
 <details>
 
@@ -439,16 +400,24 @@ The nav bar (Home , Login , Register , Cio)
 
 ![Alt text](static/images/responsive%20comment%20section%20%2B%20form.PNG)
 
-
 ![Alt text](static/images/responsive%20main%20page.PNG)
-
 
 ![Alt text](static/images/responsive%20post.PNG)
 
-
 </details>
 
+<details>
 
+<summary> Error Pages </summary>
+404.html error page
+
+500.html error page
+
+![Alt text](static/images/500%20error.PNG)
+
+![Alt text](static/images/404%20error.PNG)
+
+</details>
 
 ## Technologies used
 
@@ -462,8 +431,8 @@ The nav bar (Home , Login , Register , Cio)
 - CodeAnywhere(Cloud IDE)
 - Heroku (Live Application Host)
 
+## Packages Installed
 
-## Packages Installed 
 Packages were installed using "pip3 install (repackage)
 
 Packages were frozen using "pip3 freeze --local > requirements.txt" so heroku know which packages to install in the project.
@@ -504,14 +473,12 @@ sqlparse==0.4.4
 
 urllib3==1.26.15
 
-
 ### Future Features
 
 - Display a message when user Logs in or Logs out of the web page.
 - Create My profile. Giving the user a change to view the posts they've liked or commented
 - Adding group of posts based on music genre. When a genre is clicked upon, to be able to display posts in the respective genre.
 - Email verification for registering new account.
-
 
 ## Testing
 
@@ -617,7 +584,6 @@ The website works on different browsers: <strong>Chrome, Firefox and Edge.</stro
 
 - Mobile Devices.
 
-
 </details>
 
 ## Validator Testing
@@ -642,6 +608,11 @@ All the pages that get displayed are validated.
 ![Alt text](static/images/update%20post%20html%20validator%20testing.PNG)
 
 ![Alt text](static/images/contact%20form%20HTML%20validator.PNG)
+
+![Alt text](static/images/500%20%20error%20HTML%20validator.PNG)
+
+![Alt text](static/images/error%20HTML%20validator.PNG)
+
 </details>
 
 <details>
@@ -666,13 +637,11 @@ All Python code is validated.
 
 ![Alt text](static/images/views%20pep8%20validator.PNG)
 
-
 - Forms
 
 ![Alt Text](static/images/forms%20validator%20pep8.PNG)
 
-
-- Contact 
+- Contact
 
 ![Alt text](static/images/contact%20view%20PEP8.PNG)
 
@@ -695,7 +664,7 @@ Lighthouse.
 <summary>WAVE</summary>
 WAVE validator.
 
-![Alt text](static/images/wave.PNG)
+![Alt text](static/images/wave%20validator.PNG)
 
 </details>
 
@@ -708,7 +677,7 @@ WAVE validator.
 
 - The site was deployed to Heroku. The steps to deploy are as follows:
   - In the Heroku profile, create a new project, name must be unique, location set to Europe
-  - 
+  -
   - From the the project you have just created you can go to the setting page.
   - Once in the settings page, Add the right Config Variables to the project. SECRET KEY DATABASE URL ets.
   - Then from there you go to the Deploy page and link your GitHub repo to the project u intented to deploy.
@@ -721,18 +690,14 @@ WAVE validator.
 - [Code Institute](http://codeinstitute.net)
 - For the great lessons (I think therefore blog)
 
-
 - [Font Awesome.](https://fontawesome.com/)
 - For the browser tab icon
 
 - [Bootstrap](https://bootstrap.com)
 - Bootstrap was user to create a responsive desing on all platforms.
 
-
 - [Pexels](https://pexels.com)
 - Images were taken from Pexels.
-
-
 
 ## Acknowledgements
 
