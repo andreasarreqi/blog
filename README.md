@@ -690,8 +690,11 @@ WAVE validator.
 - [Code Institute](https://codeinstitute.net)
 - For the great lessons (I think therefore blog)
 
-- [Favicon](https://favicom.com)
+- [Favicon](https://favicon.io)
 - For the browser tab icon
+-
+- [StudyGyaan](https://studygyaan.com/django/how-to-create-a-unique-slug-in-django?utm_content=cmp-true)
+- For the tutorial on Slugify
 
 - [Font Awesome.](https://fontawesome.com/)
 - For the Social MEdia icons , Like, Comment buttons
