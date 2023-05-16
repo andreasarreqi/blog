@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Musician, Comment
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import CommentForm, PostForm
+from django.contrib.auth.mixins import UserPassesTestMixin
 
 
 class MusicianList(generic.ListView):
@@ -133,10 +134,12 @@ class SharedPostsByUsers(LoginRequiredMixin, generic.ListView):
     paginate_by = 6
 
     def get_queryset(self, *args, **kwargs):
-        return Musician.objects.filter(author=self.request.user, status=1).order_by('-created_on')  # noqa: E501
+        return Musician.objects.filter(
+            author=self.request.user, status=1
+            ).order_by('-created_on')
 
 
-class UpdatePost(UpdateView):
+class UpdatePost(UserPassesTestMixin, UpdateView):
     """
     update a post when user logged in
     and shared a post, and they are the
@@ -153,8 +156,11 @@ class UpdatePost(UpdateView):
         """
         return super().form_valid(form)
 
+    def test_func(self):
+        return self.request.user == self.get_object().author
 
-class DeletePost(DeleteView):
+
+class DeletePost(UserPassesTestMixin, DeleteView):
     """
     delete a post when user logged in
     and shared a post, and they are the
@@ -163,3 +169,6 @@ class DeletePost(DeleteView):
     model = Musician
     template_name = 'delete_post.html'
     success_url = '/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().author
