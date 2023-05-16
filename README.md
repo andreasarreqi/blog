@@ -677,7 +677,7 @@ WAVE validator.
 
 - The site was deployed to Heroku. The steps to deploy are as follows:
   - In the Heroku profile, create a new project, name must be unique, location set to Europe
-  -
+
   - From the the project you have just created you can go to the setting page.
   - Once in the settings page, Add the right Config Variables to the project. SECRET KEY DATABASE URL ets.
   - Then from there you go to the Deploy page and link your GitHub repo to the project u intented to deploy.
@@ -692,7 +692,7 @@ WAVE validator.
 
 - [Favicon](https://favicon.io)
 - For the browser tab icon
--
+
 - [StudyGyaan](https://studygyaan.com/django/how-to-create-a-unique-slug-in-django?utm_content=cmp-true)
 - For the tutorial on Slugify
 
