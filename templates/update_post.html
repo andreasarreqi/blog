@@ -19,10 +19,11 @@
     <div>
         <div class="row g-0">
             <div class="col-12 col-md-8 offset-md-2">
-                <form method="POST" class="edit-post mt-2" action="{% url 'update_post' musician.slug %}">
+                <form method="POST" class="edit-post mt-2" action="{% url 'update_post' musician.slug %}"
+                    enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
-                    <div class="text-center mt-3 mb-3">
+                    <div class=" text-center mt-3 mb-3">
                         <a href="{% url 'update_post' musician.slug %}">
                             <button type="submit" class="btn btn-signup btn-lg">Submit</button>
                         </a>

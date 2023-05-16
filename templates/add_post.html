@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <h3 class="h3 text-center mt-3">Add Post</h3>
-            <form method="POST" class="add-post" action="{% url 'add_post' %}">
+            <form method="POST" class="add-post" action="{% url 'add_post' %}" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-center mt-3 mb-3">
