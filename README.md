@@ -687,11 +687,14 @@ WAVE validator.
 
 ## Credits
 
-- [Code Institute](http://codeinstitute.net)
+- [Code Institute](https://codeinstitute.net)
 - For the great lessons (I think therefore blog)
 
-- [Font Awesome.](https://fontawesome.com/)
+- [Favicon](https://favicom.com)
 - For the browser tab icon
+
+- [Font Awesome.](https://fontawesome.com/)
+- For the Social MEdia icons , Like, Comment buttons
 
 - [Bootstrap](https://bootstrap.com)
 - Bootstrap was user to create a responsive desing on all platforms.
