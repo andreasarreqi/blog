@@ -264,13 +264,33 @@ This epic is for all stories related to deploying the app to heroku so that the 
 
 DEPLOYEMENT - USER STORIES
 
+As a developed, I need to deploy the project to heroku to be accessed by everyone
+
+<details>
+<summary> Acceptance Criteria </summary>
+
+- Website can be run not only localy
+
+- 
+</details>
+
 
 EPIC 5 - Documentation
 
 This epic is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and using the application.
 
+
 DOCUMENTATION - USER STORIES
 
+As a developer, I want to create a README file to document every step I took creating the project
+
+<details>
+<summary> Acceptance Criteria </summary>
+
+- Anyone can see the procces of this page's development
+
+
+</details>
 
 
 ### Features
@@ -288,13 +308,19 @@ DOCUMENTATION - USER STORIES
 <details>
 <summary>Main Page</summary>
 
-
+- Main page contains the nav bar
+- Blog Posts
+- Footer
+  
 ![Alt text](static/images/front%20page.PNG)
 
 </details>
 
 <details>
-<summary>Navigation Bar</summary>
+<summary>Navigation Bar</summary
+
+
+The nav bar (Home , Login , Register , Cio)
 
 ![Alt text](static/images/new%20nav.PNG)
 
@@ -302,6 +328,8 @@ DOCUMENTATION - USER STORIES
 
 <details>
 <summary>Footer</summary>
+
+- Footer contains the Social Media links that redirect to each respective link
 
 ![Alt text](static/images/footer.PNG)
 
@@ -311,6 +339,8 @@ DOCUMENTATION - USER STORIES
 
 <summary>Login Form</summary>
 
+- Login form allows users to log into the website
+
 ![Alt text](static/images/login.PNG)
 
 </details>
@@ -318,12 +348,16 @@ DOCUMENTATION - USER STORIES
 <details>
 <summary>Logout Form</summary>
 
+- Logout form allows user to log out of t he website
+
 ![Alt text](static/images/logout.PNG)
 
 </details>
 
 <details>
-<summary>Register Frrm</summary>
+<summary>Register Form</summary>
+
+- Register form allows user to create their own account
 
 ![Alt text](static/images/register.PNG)
 
@@ -333,6 +367,8 @@ DOCUMENTATION - USER STORIES
 <details>
 <summary>Contact Us</summary>
 
+- Contact form allows user to contatt the website's administrators.
+ 
 ![Alt text](static/images/contact%20form.PNG)
 
 </details>
@@ -341,6 +377,7 @@ DOCUMENTATION - USER STORIES
 <details>
 <summary>Add a post </summary>
 
+- Allows the user to add a post
 
 ![Alt text](static/images/add%20post.PNG)
 
@@ -351,6 +388,8 @@ DOCUMENTATION - USER STORIES
 <details>
 
 <summary>My posts/Add Post</summary>
+
+- Allows users to view therir posts or add first/another post
 
 ![Alt text](static/images/logged%20in%20navbar.PNG)
 
@@ -368,6 +407,8 @@ DOCUMENTATION - USER STORIES
 
 <summary> Update/Delete Form</summary>
 
+- Allows user to update or delete the forms they created
+
 ![Alt text](static/images/delete%20post.PNG)
 
 
@@ -379,6 +420,8 @@ DOCUMENTATION - USER STORIES
 <details>
 
 <summary> Like/Comment a Post</summary>
+
+- Allows users to Like or Comment a post
 
 ![Alt text](static/images/add%20comment.PNG)
 
@@ -392,6 +435,7 @@ DOCUMENTATION - USER STORIES
 
 <summary> Responsiveness</summary>
 
+- Responsiveness was achieved using Bootstrap classes and CSS
 
 ![Alt text](static/images/responsive%20comment%20section%20%2B%20form.PNG)
 
@@ -411,15 +455,59 @@ DOCUMENTATION - USER STORIES
 - HTML (Templates)
 - CSS (Style sheet)
 - Python + Django (Programming language + Framework)
+- Psycopg2 - ElephantSQL(Database)
+- Cooloudinary (For storing images)
 - Git (Version Control)
 - Github (Respository)
 - CodeAnywhere(Cloud IDE)
 - Heroku (Live Application Host)
 
+
+## Packages Installed 
+Packages were installed using "pip3 install (repackage)
+
+Packages were frozen using "pip3 freeze --local > requirements.txt" so heroku know which packages to install in the project.
+
+asgiref==3.6.0
+
+cloudinary==1.32.0
+
+dj-database-url==0.5.0
+
+Django==3.2.19
+
+django-allauth==0.54.0
+
+django-cloudinary-storage==0.3.0
+
+django-crispy-forms==1.14.0
+
+django-summernote==0.8.20.0
+
+env==0.1.0
+
+gunicorn==20.1.0
+
+oauthlib==3.2.2
+
+psycopg2==2.9.6
+
+PyJWT==2.6.0
+
+python3-openid==3.2.0
+
+pytz==2023.3
+
+requests-oauthlib==1.3.1
+
+sqlparse==0.4.4
+
+urllib3==1.26.15
+
+
 ### Future Features
 
 - Display a message when user Logs in or Logs out of the web page.
-- Create a Conatct Us page.
 - Create My profile. Giving the user a change to view the posts they've liked or commented
 - Adding group of posts based on music genre. When a genre is clicked upon, to be able to display posts in the respective genre.
 - Email verification for registering new account.
@@ -614,6 +702,7 @@ WAVE validator.
 ### Unfixed Bugs / Other
 
 - A few errors accur in the HTML validator but the web application works fine. The errors maybe appear due to use of Django elemetts in the HTML templates.
+- Posts cannot have the same name. Only one post can have a specific name(title/artist name)
 
 ## Deployment
 
