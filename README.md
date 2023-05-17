@@ -421,6 +421,8 @@ The nav bar (Home , Login , Register , Cio)
 
 </details>
 
+P.S: A Message is displayed to the user after Login/Logout/Register/Editing a post/Contact
+
 ## Technologies used
 
 - HTML (Templates)
@@ -477,7 +479,6 @@ urllib3==1.26.15
 
 ### Future Features
 
-- Display a message when user Logs in or Logs out of the web page.
 - Create My profile. Giving the user a change to view the posts they've liked or commented
 - Adding group of posts based on music genre. When a genre is clicked upon, to be able to display posts in the respective genre.
 - Email verification for registering new account.
