@@ -6,6 +6,7 @@ from .models import Musician, Comment
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import CommentForm, PostForm
 from django.contrib.auth.mixins import UserPassesTestMixin
+from django.contrib import messages
 
 
 class MusicianList(generic.ListView):
@@ -113,8 +114,11 @@ class AddPost(View):
                 form.instance.name = request.user.username
                 form.instance.author = self.request.user
                 form.save()
+                messages.success(request, 'Your post is awaiting approval.')
                 return redirect('home')
             else:
+                messages.error(
+                    request, 'Error: Something went wrong, please try again.')
                 return render(request, 'add_post.html', {'form': form})
         else:
             form = PostForm()
@@ -154,6 +158,8 @@ class UpdatePost(UserPassesTestMixin, UpdateView):
         """
         if form is valid return to the home page
         """
+        messages.success(
+            self.request, "You have updated your post successfully.")
         return super().form_valid(form)
 
     def test_func(self):

@@ -705,6 +705,12 @@ WAVE validator.
 - [Pexels](https://pexels.com)
 - Images were taken from Pexels.
 
+- [<OrdinaryCoders>](https://ordinarycoders.com/blog/article/django-messages-framework)
+- Django alert messages when post is added/edited/deleted and when contact form is submited
+
+- [CoduBeta](https://www.codu.co/articles/securing-django-views-from-unauthorized-access-npyb3to_)
+- UserPassestestmixin was taken from here.
+
 ## Acknowledgements
 
 - I would like to thank my mentor Daisy for guiding me.

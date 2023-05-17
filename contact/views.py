@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import generic, View
 from .forms import ContactForm
 from .models import Contact
+from django.contrib import messages
 
 
 class ContactUs(View):
@@ -30,6 +31,9 @@ class ContactUs(View):
             form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(
+                self.request,
+                'Thank you! Your message has been sent successfully.')
             return redirect('/')
         else:
             form = ContactForm()
