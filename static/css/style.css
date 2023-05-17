@@ -168,10 +168,9 @@ main {
 
     .form {
         text-align: center;
-        margin-top: 50%;
     }
 
     .card-text {
-        font-size: 10px;
+        font-size: 14px;
     }
 }
