@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 /* --------------------------- Navbar background */
@@ -129,7 +129,7 @@ main {
 
 /*--------------------------------- Form container*/
 .form {
-    margin-top: 6%;
+    margin-top: 3%;
 }
 
 .add-post {
@@ -153,6 +153,11 @@ main {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+/*---------------------------------- Alert styling*/
+.alert {
+    margin-top: 40px;
 }
 
 /*---------------------------------- Media Queries*/
