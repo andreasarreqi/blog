@@ -131,7 +131,7 @@ As a developer, I need to implement allauth so that users can sign up and have a
 
 </details>
 
-As a developer, I need to style the UI of the forms to look more appealing.
+As a developer, I need to style the forms to look more appealing.
 
 <details>
 <summary> 4. Acceptance Criteria </summary>
@@ -239,7 +239,7 @@ As a user, I would like to be able to contact the restaurant so that I can have 
 
 EPIC 4 - Deployment Epic
 
-This epic is for all stories related to deploying the app to heroku so that the site is live for staff and customer use.
+This epic is for all stories related to deploying the app to heroku so that the site is live for users.
 
 DEPLOYEMENT - USER STORIES
 
@@ -676,10 +676,10 @@ WAVE validator.
 ## Deployment
 
 - The site was deployed to Heroku. The steps to deploy are as follows:
-  - In the Heroku profile, create a new project, name must be unique, location set to Europe
 
+  - In the Heroku profile, create a new project, name must be unique, location set to Europe
   - From the the project you have just created you can go to the setting page.
-  - Once in the settings page, Add the right Config Variables to the project. SECRET KEY DATABASE URL ets.
+  - Once in the settings page, Add the right Configuration Variables to the project. SECRET_KEY DATABASE_URL and CLOUDINARY_URL.
   - Then from there you go to the Deploy page and link your GitHub repo to the project u intented to deploy.
   - Then you can scroll at the end of the page and click on the Deploy Branch
   - After Heroku starts compiling the files and creating your app , after 1 minute or so you'll have your delpyed app link.
@@ -710,6 +710,9 @@ WAVE validator.
 
 - [CoduBeta](https://www.codu.co/articles/securing-django-views-from-unauthorized-access-npyb3to_)
 - UserPassestestmixin was taken from here.
+
+- [Biograpy](https://www.biography.com/musicians/tupac-shaku)
+- Biography of the Artists taken from Biography.
 
 ## Acknowledgements
 
