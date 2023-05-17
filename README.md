@@ -1,5 +1,7 @@
 # [Welcome to Rap blog](https://rapblog.herokuapp.com/)
 
+![Alt text](static/images/rapblog.PNG)
+
 ## Introduction
 
 Welcome to my very own [Rap Blog](https://rapblog.herokuapp.com/).
